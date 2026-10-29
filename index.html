@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Fret Atelier | Jude T — Guitar Pedagogy & Trinity Exam Preparation</title>
+  <title>The Fret Atelier | Jude T — Guitar Instruction & Trinity Exam Preparation</title>
+  
+  <!-- Canonical & Social Metadata -->
+  <link rel="canonical" href="https://fretatelier.com">
+  <meta property="og:title" content="The Fret Atelier | Jude T — Guitar Instruction & Trinity Exam Preparation">
+  <meta property="og:description" content="Precision guitar coaching built upon rigorous acoustic and classical fundamentals, customized online micro-batches, and certified Trinity College London exam pipelines.">
+  <meta property="og:url" content="https://fretatelier.com">
+  <meta property="og:type" content="website">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Three.js CDN -->
@@ -39,7 +47,6 @@
   </script>
 
   <style>
-    /* Resend / Apple aesthetic helpers */
     body {
       background-color: #050507;
       color: #e4e4e7;
@@ -89,14 +96,12 @@
       border-color: rgba(255, 255, 255, 0.2);
       box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
     }
-    /* Subtle grid overlay */
     .bg-grid {
       background-size: 40px 40px;
       background-image: 
         linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
     }
-    /* Custom thin scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
     }
@@ -107,8 +112,6 @@
       background: rgba(255, 255, 255, 0.18);
       border-radius: 9999px;
     }
-
-    /* Expandable tile animation */
     .expand-content {
       max-height: 0;
       opacity: 0;
@@ -152,7 +155,7 @@
   <!-- MAIN WRAPPER -->
   <div class="relative z-10 flex flex-col min-h-screen">
 
-    <!-- FLOATING APPLE/RESEND STYLE TOP BAR -->
+    <!-- FLOATING TOP BAR -->
     <header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 w-full max-w-6xl mx-auto">
       <div class="resend-blur bg-obsidian/85 border border-white/10 rounded-2xl px-4 sm:px-5 py-3 flex items-center justify-between shadow-2xl transition-all">
         
@@ -215,7 +218,7 @@
     <main class="flex-grow max-w-6xl w-full mx-auto">
 
       <!-- ============================================== -->
-      <!-- PAGE 1: ATELIER (MANIFESTO & 3D OVERVIEW) -->
+      <!-- PAGE 1: ATELIER (OVERVIEW) -->
       <!-- ============================================== -->
       <section id="page-home" class="page-section in-view space-y-10 sm:space-y-12">
         
@@ -227,12 +230,12 @@
           </div>
 
           <h1 class="text-4xl sm:text-7xl font-serif font-light text-white leading-[1.08] tracking-tight">
-            The Architecture of <br class="hidden sm:inline">
+            The Craft of <br class="hidden sm:inline">
             <span class="italic font-normal text-zinc-300">Modern Guitar Mastery.</span>
           </h1>
 
           <p class="text-zinc-400 text-base sm:text-lg font-light max-w-2xl mx-auto leading-relaxed">
-            Instruction by <strong class="text-white font-medium">Jude T</strong>. Precision guitar coaching built upon rigorous acoustic and classical fundamentals, customized online micro-batches, and certified <strong class="text-white font-medium">Trinity College London</strong> exam pipelines.
+            Instruction by <strong class="text-white font-medium">Jude T</strong>. Precision guitar coaching built upon classical fundamentals, contemporary acoustic techniques, customized online micro-batches, and certified <strong class="text-white font-medium">Trinity College London</strong> exam preparation.
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -246,10 +249,10 @@
           </div>
         </div>
 
-        <!-- Scroll & 3D Control Prompt -->
+        <!-- Scroll Prompt -->
         <div class="text-center pt-2">
           <button onclick="scrollToSection('page-formats')" class="text-[11px] font-mono text-zinc-400 uppercase tracking-widest inline-flex items-center gap-2 hover:text-white transition-colors">
-            <span>Scroll down to experience the journey</span>
+            <span>Scroll down to explore</span>
             <i class="ph ph-arrow-down animate-bounce text-sm"></i>
           </button>
         </div>
@@ -263,7 +266,7 @@
             <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-400">Global Zoom</span>
             <h3 class="text-xl font-serif text-white mt-1 mb-2">Online Micro-Batches</h3>
             <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-              Strictly capped at 3 students. Individualized exercises per student with late-night 10 PM – 2 AM IST slots configured for UK & US timezones.
+              Strictly capped at 3 students. Individualized drills per student with convenient evening slots configured for UK, US, and GCC timezones.
             </p>
             <button onclick="scrollToSection('page-formats')" class="text-xs font-mono text-zinc-300 hover:text-white flex items-center gap-1">
               View Schedule <i class="ph ph-arrow-down-right"></i>
@@ -277,7 +280,7 @@
             <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-400">Ernakulam</span>
             <h3 class="text-xl font-serif text-white mt-1 mb-2">1-on-1 Home Tuition</h3>
             <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-              Dedicated 45-minute private instruction at your residence on Sunday & Friday mornings across 11 designated prime enclaves.
+              Dedicated 45-minute private instruction at your residence on Sunday & Friday mornings across select prime corridors in Kochi.
             </p>
             <button onclick="scrollToSection('page-formats')" class="text-xs font-mono text-zinc-300 hover:text-white flex items-center gap-1">
               View Localities <i class="ph ph-arrow-down-right"></i>
@@ -305,7 +308,7 @@
             <div class="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/20 animate-pulse"></div>
             <div>
               <p class="text-xs font-mono text-white">Studio Availability Status</p>
-              <p class="text-xs text-zinc-400">Accepting applications for late-night online batches & Sunday/Friday Ernakulam home visits.</p>
+              <p class="text-xs text-zinc-400">Accepting applications for online micro-batches & Sunday/Friday Ernakulam home visits.</p>
             </div>
           </div>
           <button onclick="scrollToSection('page-booking')" class="px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-white/15 text-xs font-mono text-white whitespace-nowrap transition-colors">
@@ -348,7 +351,7 @@
                     <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Free 20-30m Trial</span>
                     <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-zinc-400">Zoom Global</span>
                   </div>
-                  <p class="text-xs sm:text-sm text-zinc-400">55 Mins • Max 3 Students • Individualized drills • UK & US time slots</p>
+                  <p class="text-xs sm:text-sm text-zinc-400">55 Mins • Max 3 Students • Individualized drills • UK, US & Gulf slots</p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
@@ -376,7 +379,7 @@
                   <div class="p-4 rounded-xl bg-surface border border-white/5 space-y-1">
                     <span class="text-[10px] font-mono text-zinc-500 uppercase">Faculty Placement</span>
                     <h4 class="text-sm font-medium text-white">Instructor Matching</h4>
-                    <p class="text-xs text-zinc-400">Sessions are assigned across studio faculty based on schedule alignment and current learning stage.</p>
+                    <p class="text-xs text-zinc-400">Sessions are personally directed by Jude T based on schedule alignment and current learning stage.</p>
                   </div>
                 </div>
 
@@ -384,20 +387,20 @@
                   <span class="text-xs font-mono text-white block">Reference Operating Windows (Zoom):</span>
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono text-zinc-300">
                     <div class="p-3 rounded-lg bg-obsidian border border-white/5">
-                      <div class="text-emerald-400 font-semibold mb-1">Late Night (10:00 PM – 2:00 AM IST)</div>
+                      <div class="text-emerald-400 font-semibold mb-1">Late Night Window (10:00 PM – 2:00 AM IST)</div>
                       <div class="text-zinc-400">🇬🇧 UK: 4:30 PM – 8:30 PM (Evening)</div>
                       <div class="text-zinc-400">🇺🇸 US East: 11:30 AM – 3:30 PM (Afternoon)</div>
                     </div>
                     <div class="p-3 rounded-lg bg-obsidian border border-white/5">
-                      <div class="text-emerald-400 font-semibold mb-1">Early Morning (7:00 AM – 10:00 AM IST)</div>
-                      <div class="text-zinc-400">🇮🇳 India Morning Routine</div>
-                      <div class="text-zinc-400">🇺🇸 US East: 8:30 PM – 11:30 PM (Prev Night)</div>
+                      <div class="text-emerald-400 font-semibold mb-1">Morning & Gulf Windows</div>
+                      <div class="text-zinc-400">🇮🇳 India Morning: 7:00 AM – 10:00 AM IST</div>
+                      <div class="text-zinc-400">🇦🇪 GCC: Friday Evenings & Weekend Afternoons</div>
                     </div>
                   </div>
                 </div>
 
                 <div class="flex items-center justify-between pt-2">
-                  <span class="text-xs font-mono text-zinc-500">Advance monthly billing • 1x or 2x weekly</span>
+                  <span class="text-xs font-mono text-zinc-500">Advance monthly billing • 1x weekly</span>
                   <button onclick="scrollToSection('page-booking', 'online')" class="px-5 py-2.5 rounded-xl bg-white hover:bg-zinc-200 text-black font-semibold text-xs font-mono uppercase tracking-wider transition-colors">
                     Request Online Trial
                   </button>
@@ -469,7 +472,7 @@
                 </div>
 
                 <div class="flex items-center justify-between pt-2">
-                  <span class="text-xs font-mono text-zinc-500">Advance monthly billing • Travel-adjusted quote</span>
+                  <span class="text-xs font-mono text-zinc-500">Advance monthly billing • Travel-adjusted schedule</span>
                   <button onclick="scrollToSection('page-booking', 'home')" class="px-5 py-2.5 rounded-xl bg-white hover:bg-zinc-200 text-black font-semibold text-xs font-mono uppercase tracking-wider transition-colors">
                     Request Home Tuition
                   </button>
@@ -507,10 +510,10 @@
               <div class="p-6 sm:p-7 space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div class="p-4 rounded-xl bg-surface border border-white/5 space-y-2">
-                    <span class="text-[10px] font-mono text-zinc-500 uppercase">Workbook Pedagogy</span>
+                    <span class="text-[10px] font-mono text-zinc-500 uppercase">Workbook Structure</span>
                     <h4 class="text-sm font-medium text-white">Unified Book, Individual Milestones</h4>
                     <p class="text-xs text-zinc-400 leading-relaxed">
-                      All students in the community batch study from the same foundational workbook, but each student advances according to their own personal learning curve and milestones.
+                      All students study from the same foundational curriculum, but each student advances according to their own personal practice habits and milestone targets.
                     </p>
                   </div>
                   <div class="p-4 rounded-xl bg-surface border border-white/5 space-y-2">
@@ -538,7 +541,7 @@
         <div class="glass-card rounded-2xl p-5 border border-white/10 flex items-center gap-3.5">
           <i class="ph ph-lock-key text-zinc-400 text-xl flex-shrink-0"></i>
           <p class="text-xs text-zinc-400 font-mono leading-relaxed">
-            <strong class="text-white">Corporate Teaching Commitment Notice:</strong> Daily 2:30 PM – 10:00 PM IST is reserved for institutional corporate coaching duties. All Fret Atelier lessons operate outside this window.
+            <strong class="text-white">Corporate Teaching Commitment Notice:</strong> Daily 2:30 PM – 10:00 PM IST is reserved for institutional corporate coaching duties. All Fret Atelier private lessons operate outside this window.
           </p>
         </div>
 
@@ -553,7 +556,7 @@
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-400">
             <span>03</span>
             <span class="text-zinc-600">/</span>
-            <span>Syllabus & Pedagogy</span>
+            <span>Syllabus & Guidance</span>
           </div>
           <h2 class="text-3xl sm:text-5xl font-serif font-light text-white">Trinity Exam Tracks & Curriculum</h2>
           <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
@@ -582,9 +585,9 @@
             </div>
             <div id="tile-classical" class="expand-content border-t border-white/5 bg-obsidian/60">
               <div class="p-6 space-y-3 text-xs sm:text-sm text-zinc-400 leading-relaxed">
-                <p>Standard treble clef notation sight-reading, classical right-hand mechanics (tirando and apoyando strokes), nail shape tone production, polyphony, arpeggios, and canonical pieces from Sor, Carcassi, and Brouwer.</p>
+                <p>Standard notation sight-reading, classical right-hand mechanics (tirando and apoyando strokes), nail shape tone production, polyphony, arpeggios, and canonical pieces from Sor, Carcassi, and Brouwer.</p>
                 <div class="p-3 rounded-lg bg-surface border border-white/5 font-mono text-xs text-zinc-300">
-                  Full supervision provided for Trinity digital video exam single-take filming and acoustic balance.
+                  Full guidance provided for Trinity digital video exam single-take filming and acoustic balance at no extra charge.
                 </div>
               </div>
             </div>
@@ -636,7 +639,7 @@
               <div class="p-6 space-y-3 text-xs sm:text-sm text-zinc-400 leading-relaxed">
                 <p>Electric riffs, pentatonic/modal solos, string bends, vibrato mastery, palm muting, tone dialing, and playing tightly locked with real backing tracks.</p>
                 <div class="p-3 rounded-lg bg-surface border border-white/5 font-mono text-xs text-zinc-300">
-                  Covers amp level balancing, audio interface inputs, and digital exam filming.
+                  Covers amp level balancing, audio interface inputs, and digital exam filming compliance.
                 </div>
               </div>
             </div>
@@ -647,20 +650,20 @@
         <!-- Technical Modules & Genre Scope Overview -->
         <div class="glass-card rounded-2xl p-6 sm:p-7 space-y-4">
           <div class="flex items-center justify-between">
-            <h3 class="text-xl font-serif text-white">Curriculum Modules & Genre Boundaries</h3>
-            <span class="text-xs font-mono text-zinc-500">Structured Roadmap</span>
+            <h3 class="text-xl font-serif text-white">Curriculum Modules & Studio Focus</h3>
+            <span class="text-xs font-mono text-zinc-500">Structured Path</span>
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-mono">
             <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">01. Finger Mechanics</div>
             <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">02. Notation & Theory</div>
-            <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">03. Chords & Barre Voicings</div>
+            <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">03. Chords & Barre Shapes</div>
             <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">04. Scales & CAGED Visuals</div>
-            <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">05. Repertoire & Songs</div>
+            <div class="p-3 rounded-xl bg-surface border border-white/5 text-zinc-300">05. Repertoire & Solos</div>
             <div class="p-3 rounded-xl bg-red-950/20 border border-red-500/20 text-red-300">No Jazz / Flamenco</div>
           </div>
         </div>
 
-        <!-- Billing Structure Tile (Expandable) -->
+        <!-- Enrollment & Policy Tile -->
         <div class="glass-card rounded-2xl border border-white/10 overflow-hidden">
           <div onclick="toggleTile('tile-billing')" class="p-6 flex items-center justify-between cursor-pointer select-none group">
             <div class="flex items-center gap-4">
@@ -668,8 +671,8 @@
                 <i class="ph ph-receipt text-lg"></i>
               </div>
               <div>
-                <h3 class="text-lg font-serif text-white">Tuition & Advance Monthly Billing Policy</h3>
-                <p class="text-xs font-mono text-zinc-400">Click to view currency structure and travel distance policies</p>
+                <h3 class="text-lg font-serif text-white">Tuition & Admission Guidelines</h3>
+                <p class="text-xs font-mono text-zinc-400">Click to view monthly policy and trial consultation details</p>
               </div>
             </div>
             <div id="chevron-tile-billing" class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 group-hover:text-white chevron-rotate">
@@ -678,20 +681,12 @@
           </div>
           <div id="tile-billing" class="expand-content border-t border-white/5 bg-obsidian/60">
             <div class="p-6 space-y-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              <p>All tuition is billed at the beginning of each calendar month. We do not use long-term locked contracts or hidden registration fees.</p>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs">
-                <div class="p-3 rounded-lg bg-surface border border-white/5">
-                  <span class="text-white block font-semibold mb-1">Global Currency Quotes</span>
-                  <span>Calculated in GBP, USD, or INR depending on your location and timezone.</span>
-                </div>
-                <div class="p-3 rounded-lg bg-surface border border-white/5">
-                  <span class="text-white block font-semibold mb-1">Home Tuition Travel</span>
-                  <span>Quotes for Ernakulam home visits account for travel distance and transit time.</span>
-                </div>
-                <div class="p-3 rounded-lg bg-surface border border-white/5">
-                  <span class="text-white block font-semibold mb-1">Society Group Tiers</span>
-                  <span>Community clubhouse batches feature special tiered rates based on confirmed headcount.</span>
-                </div>
+              <p>Tuition is billed in 4-week advance cycles. Trinity College London exam syllabus guidance and video recording support are fully included for enrolled candidates.</p>
+              <div class="p-4 rounded-xl bg-surface border border-white/5 text-xs font-mono text-zinc-300 space-y-1.5">
+                <div class="text-white font-semibold">Concierge Fee Consultation:</div>
+                <p class="text-zinc-400 leading-relaxed">
+                  Tailored rate schedules (INR for India, AED/QAR for GCC, or GBP/USD for international timezones) and current batch openings are shared directly when you request your trial session.
+                </p>
               </div>
             </div>
           </div>
@@ -700,7 +695,7 @@
       </section>
 
       <!-- ============================================== -->
-      <!-- PAGE 4: INSTRUMENTS BUYER'S VAULT (WITH PHOTOS & MODAL) -->
+      <!-- PAGE 4: INSTRUMENTS BUYER'S VAULT -->
       <!-- ============================================== -->
       <section id="page-instruments" class="page-section space-y-10">
         
@@ -733,7 +728,7 @@
           <button onclick="filterGear('electric')" id="gfilter-electric" class="px-4 py-2 rounded-xl bg-surface hover:bg-zinc-800 border border-white/10 text-zinc-400 hover:text-white transition-all">Electric (3)</button>
         </div>
 
-        <!-- Guitar Models Grid (Minimalist Typographic Cards with Official Links) -->
+        <!-- Guitar Models Grid -->
         <div id="gearGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Populated dynamically via JS -->
         </div>
@@ -741,7 +736,7 @@
         <div class="glass-card rounded-2xl p-6 text-center space-y-3">
           <div class="inline-flex items-center gap-2 text-xs font-mono text-zinc-300">
             <i class="ph ph-map-pin text-white"></i>
-            <span>Local Ernakulam & Kochi store recommendations provided directly upon consultation.</span>
+            <span>Local Ernakulam store recommendations provided directly upon consultation.</span>
           </div>
           <p class="text-xs text-zinc-400 max-w-xl mx-auto">
             Need advice on string gauge, scale length, or verifying instrument condition before buying? Message Jude directly.
@@ -769,7 +764,7 @@
           </div>
           <h2 class="text-3xl sm:text-5xl font-serif font-light text-white">Enrollment & Lesson Consultation</h2>
           <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Fill out your details below. Once submitted, your registration summary is dispatched directly to Jude T via WhatsApp for instant scheduling.
+            Fill out your details below. Once submitted, your registration summary is dispatched directly to Jude T via WhatsApp for instant scheduling and fee card dispatch.
           </p>
         </div>
 
@@ -874,7 +869,7 @@
                   <option value="Absolute Beginner">Absolute Beginner (Starting Fresh)</option>
                   <option value="Basic Chords & Songs">Basic Chords & Songs</option>
                   <option value="Trinity Exam Track">Trinity Exam Track (Grade 1–8)</option>
-                  <option value="Intermediate Player">Intermediate / Seeking Technique Cleanup</option>
+                  <option value="Intermediate Player">Intermediate / Technique Cleanup</option>
                 </select>
               </div>
             </div>
@@ -884,8 +879,8 @@
               <div>
                 <label class="block text-xs font-mono uppercase tracking-wider text-zinc-400 mb-1.5">Target Reference Window</label>
                 <select id="slotInput" class="w-full bg-obsidian border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white font-mono">
-                  <option value="Late Night: 10:00 PM – 2:00 AM IST">Late Night Window (10:00 PM – 2:00 AM IST / UK: 4:30–8:30 PM)</option>
-                  <option value="Morning: 7:00 AM – 10:00 AM IST">Morning Window (7:00 AM – 10:00 AM IST)</option>
+                  <option value="Late Night: 10:00 PM – 2:00 AM IST">Late Night (10:00 PM – 2:00 AM IST / UK: 4:30–8:30 PM)</option>
+                  <option value="Morning: 7:00 AM – 10:00 AM IST">Morning (7:00 AM – 10:00 AM IST)</option>
                   <option value="Sunday Morning: 9:00 AM – 1:00 PM (Home Only)">Sunday Morning (9:00 AM – 1:00 PM • Home Tuition)</option>
                   <option value="Friday Morning: 10:00 AM – 2:00 PM (Home Only)">Friday Morning (10:00 AM – 2:00 PM • Home Tuition)</option>
                 </select>
@@ -912,7 +907,7 @@
             <!-- Billing Acknowledgment Notice -->
             <div class="p-3.5 rounded-xl bg-obsidian border border-white/10 text-xs font-mono text-zinc-400 flex items-start gap-2.5">
               <i class="ph ph-receipt text-white text-base flex-shrink-0 mt-0.5"></i>
-              <span>All tuition is billed monthly in advance. Custom quote and exact session slot will be confirmed directly with you on WhatsApp.</span>
+              <span>All tuition is billed monthly in advance. Custom regional rate cards and slot availability will be dispatched directly to your WhatsApp.</span>
             </div>
 
             <!-- Submit Button -->
@@ -958,15 +953,12 @@
 
   </div>
 
-  <!-- SCRIPT: SCROLL OBSERVER & THREE.JS 3D BACKGROUND LOGIC -->
+  <!-- SCRIPT: THREE.JS 3D BACKGROUND & INTERACTION LOGIC -->
   <script>
     document.getElementById('yearSpan').textContent = new Date().getFullYear();
 
-    // -------------------------------------------------------------
-    // GUITAR GEAR VAULT DATA (EXACT 10 MODELS WITH OFFICIAL LINKS)
-    // -------------------------------------------------------------
     const guitarVault = [
-      // --- 3 STANDARD ACOUSTICS ---
+      // 3 STANDARD ACOUSTICS
       {
         id: 'yamaha-f310',
         category: 'acoustic',
@@ -985,7 +977,7 @@
         name: 'Ibanez V50NJP JamPack',
         badge: 'Standard Acoustic • Full Size',
         subtitle: 'Dreadnought Acoustic Starter Pack (Age 12+)',
-        desc: 'A complete acoustic setup package featuring an easy-playing spruce top dreadnought, water-resistant gig bag, clip-on chromatic tuner, strap, and accessory pouch.',
+        desc: 'A complete acoustic setup package featuring an easy-playing spruce top dreadnought, gig bag, clip-on chromatic tuner, strap, and accessory pouch.',
         why: 'Everything required on Day 1 in a single boxed kit. Excellent fret edge dressing and comfortable neck contour.',
         officialUrl: 'https://www.ibanez.com/na/products/detail/v50njp_5t_02.html'
       },
@@ -1001,7 +993,7 @@
         officialUrl: 'https://www.fender.com/products/cd-60s-dreadnought'
       },
 
-      // --- 3 ELECTRICS ---
+      // 3 ELECTRICS
       {
         id: 'squier-sonic-strat',
         category: 'electric',
@@ -1009,8 +1001,8 @@
         name: 'Squier Sonic Stratocaster',
         badge: 'Electric Benchmark',
         subtitle: 'Iconic Double-Cutaway • Single-Coil Trio',
-        desc: 'The timeless Stratocaster shape with a lightweight poplar body, satin-finished "C"-shaped neck, and three ceramic single-coil pickups with a 5-way selector switch.',
-        why: 'Slim neck profile and low electric string tension prevent fingertip fatigue. Superb for Trinity Rock & Pop and clean rhythm work.',
+        desc: 'The timeless Stratocaster shape with a lightweight body, satin-finished "C"-shaped neck, and three ceramic single-coil pickups with a 5-way selector switch.',
+        why: 'Slim neck profile and low electric string tension prevent fingertip fatigue. Superb for Trinity Rock & Pop.',
         officialUrl: 'https://www.fender.com/products/squier-sonic-stratocaster'
       },
       {
@@ -1021,7 +1013,7 @@
         badge: 'Versatile HSS Electric',
         subtitle: 'Humbucker-Single-Single Pickup Configuration',
         desc: 'Features a bridge humbucker for chunky overdrive and heavy riffs, paired with two single-coil pickups for sparkling clean melodies. Includes a synchronized tremolo bridge.',
-        why: 'The HSS layout covers every style from classic rock and blues to heavy modern lead work without hum on high gain.',
+        why: 'The HSS layout covers every style from classic rock to modern lead work without hum on high gain.',
         officialUrl: 'https://www.ibanez.com/eu/products/detail/grx40_5y_02.html'
       },
       {
@@ -1036,7 +1028,7 @@
         officialUrl: 'https://www.ibanez.com/usa/products/detail/rg421_1p_06.html'
       },
 
-      // --- 2 CLASSICAL GUITARS ---
+      // 2 CLASSICAL GUITARS
       {
         id: 'yamaha-c40',
         category: 'classical',
@@ -1060,7 +1052,7 @@
         officialUrl: 'https://cordobaguitars.com/iberia/c3m/'
       },
 
-      // --- 1 JUNIOR 3/4 ACOUSTIC (STEEL STRING, AGES 7-11) ---
+      // 1 JUNIOR 3/4 ACOUSTIC (AGES 7-11)
       {
         id: 'yamaha-jr1',
         category: 'junior',
@@ -1073,7 +1065,7 @@
         officialUrl: 'https://in.yamaha.com/en/musical-instruments/guitars-basses-amps/products/acoustic-guitars/jr/'
       },
 
-      // --- 1 JUNIOR NYLON STRING (AGES 7-11) ---
+      // 1 JUNIOR NYLON STRING (AGES 7-11)
       {
         id: 'yamaha-cs40',
         category: 'junior',
@@ -1138,10 +1130,8 @@
       renderGearGrid(cat);
     }
 
-    // Initial render of gear grid
     renderGearGrid('all');
 
-    // Expandable Accordion Logic
     function toggleTile(tileId) {
       const content = document.getElementById(tileId);
       const chevron = document.getElementById(`chevron-${tileId}`);
@@ -1157,9 +1147,6 @@
       }
     }
 
-    // -------------------------------------------------------------
-    // 1. SCROLL-DRIVEN SECTION TRACKING & HUD NAVIGATION
-    // -------------------------------------------------------------
     const sectionIds = ['page-home', 'page-formats', 'page-curriculum', 'page-instruments', 'page-booking'];
     let currentSectionIndex = 0;
     let scrollFraction = 0;
@@ -1178,7 +1165,6 @@
       }
     }
 
-    // Scroll progress bar and active section highlight
     window.addEventListener('scroll', onPageScroll, { passive: true });
 
     function onPageScroll() {
@@ -1186,13 +1172,11 @@
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       scrollFraction = docHeight > 0 ? Math.min(Math.max(scrollTop / docHeight, 0), 1) : 0;
 
-      // Update Top Progress Bar
       const pBar = document.getElementById('scroll-progress-bar');
       if (pBar) {
         pBar.style.width = `${scrollFraction * 100}%`;
       }
 
-      // Check section in-view status
       const viewportMid = window.innerHeight * 0.45;
       let activeId = sectionIds[0];
 
@@ -1201,7 +1185,6 @@
         if (!el) return;
         const rect = el.getBoundingClientRect();
 
-        // Mark as active if section crosses the viewport threshold
         if (rect.top <= viewportMid && rect.bottom >= viewportMid) {
           activeId = id;
           currentSectionIndex = idx;
@@ -1213,7 +1196,6 @@
         }
       });
 
-      // Update HUD Navbar Pills and Right-side Dots
       sectionIds.forEach(id => {
         const tab = document.getElementById(`tab-${id}`);
         const mtab = document.getElementById(`mtab-${id}`);
@@ -1304,18 +1286,14 @@
                       `• Target Window: ${slot}\n` +
                       `• Frequency: ${freq}\n` +
                       `• Has Guitar: ${hasGuitar ? 'Yes (Confirmed)' : 'No'}\n` +
-                      `• Billing Policy: Acknowledged advance monthly terms.`;
+                      `• Request: Please share the relevant fee structure and trial slot schedule.`;
 
       const encoded = encodeURIComponent(message);
       window.open(`https://wa.me/917012571699?text=${encoded}`, '_blank');
     }
 
     // -------------------------------------------------------------
-    // 2. THREE.JS 3D SCROLL-DRIVEN CAMERA & GUITAR CHOREOGRAPHY
-    // -------------------------------------------------------------
-    // 2. THREE.JS 3D SCROLL-DRIVEN GUITAR (NECK TO BODY ARCHITECTURE)
-    // -------------------------------------------------------------
-    // 2. THREE.JS 3D SCROLL-DRIVEN GUITAR FRETBOARD ARCHITECTURE
+    // THREE.JS 3D BACKGROUND
     // -------------------------------------------------------------
     let scene, camera, renderer, fretboardGroup, strings = [];
     let noteSprites = [];
@@ -1323,7 +1301,6 @@
     const windowHalfX = window.innerWidth / 2;
     const windowHalfY = window.innerHeight / 2;
 
-    // Helper: Create high-contrast music note sprite
     function createNoteSprite(char) {
       const canvas = document.createElement('canvas');
       canvas.width = 128;
@@ -1361,7 +1338,6 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-      // Studio Lighting
       const ambientLight = new THREE.AmbientLight(0xffffff, 0.75);
       scene.add(ambientLight);
 
@@ -1373,42 +1349,23 @@
       rimLight.position.set(-16, 10, -6);
       scene.add(rimLight);
 
-      // Clean, architectural fretboard container
       fretboardGroup = new THREE.Group();
 
-      const neckWoodMat = new THREE.MeshStandardMaterial({
-        color: 0x111116,
-        roughness: 0.8,
-        metalness: 0.1
-      });
-      const chromeMat = new THREE.MeshStandardMaterial({
-        color: 0xe4e4e7,
-        metalness: 0.95,
-        roughness: 0.15
-      });
-      const pearlMat = new THREE.MeshStandardMaterial({
-        color: 0xf4f4f5,
-        roughness: 0.25,
-        metalness: 0.65
-      });
-      const boneNutMat = new THREE.MeshStandardMaterial({
-        color: 0xfef9c3,
-        roughness: 0.5
-      });
+      const neckWoodMat = new THREE.MeshStandardMaterial({ color: 0x111116, roughness: 0.8, metalness: 0.1 });
+      const chromeMat = new THREE.MeshStandardMaterial({ color: 0xe4e4e7, metalness: 0.95, roughness: 0.15 });
+      const pearlMat = new THREE.MeshStandardMaterial({ color: 0xf4f4f5, roughness: 0.25, metalness: 0.65 });
+      const boneNutMat = new THREE.MeshStandardMaterial({ color: 0xfef9c3, roughness: 0.5 });
 
-      // 1. Sleek Neck / Fretboard Slab
       const neckGeo = new THREE.BoxGeometry(4.2, 0.4, 30);
       const neckMesh = new THREE.Mesh(neckGeo, neckWoodMat);
       neckMesh.position.set(0, 0, 0);
       fretboardGroup.add(neckMesh);
 
-      // 2. Bone Nut at the top
       const nutGeo = new THREE.BoxGeometry(4.25, 0.55, 0.4);
       const nutMesh = new THREE.Mesh(nutGeo, boneNutMat);
       nutMesh.position.set(0, 0.1, -14.8);
       fretboardGroup.add(nutMesh);
 
-      // 3. 22 Chrome Frets spaced along the neck
       for (let i = 0; i < 22; i++) {
         const fretZ = -13.8 + (i * 1.25);
         const fretGeo = new THREE.CylinderGeometry(0.04, 0.04, 4.22, 16);
@@ -1418,7 +1375,6 @@
         fretboardGroup.add(fretMesh);
       }
 
-      // 4. Mother-of-Pearl Dot Inlays (Frets 3, 5, 7, 9, 15, 17, 19, 21)
       const dotZPositions = [-10.0, -7.5, -5.0, -2.5, 5.0, 7.5, 10.0, 12.5];
       dotZPositions.forEach(zPos => {
         const dotGeo = new THREE.CylinderGeometry(0.14, 0.14, 0.05, 16);
@@ -1427,14 +1383,12 @@
         fretboardGroup.add(dot);
       });
 
-      // Double dot marker for 12th Fret (Z = 1.25)
       [-0.9, 0.9].forEach(xOffset => {
         const d12 = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.05, 16), pearlMat);
         d12.position.set(xOffset, 0.22, 1.25);
         fretboardGroup.add(d12);
       });
 
-      // 5. 6 Metallic Strings
       const stringPositions = [-1.45, -0.87, -0.29, 0.29, 0.87, 1.45];
       const stringGauges = [0.038, 0.032, 0.026, 0.020, 0.016, 0.012];
 
@@ -1452,14 +1406,12 @@
         strings.push(strMesh);
       });
 
-      // Initial clean perspective
       fretboardGroup.rotation.x = 0.55;
       fretboardGroup.rotation.y = -0.45;
       fretboardGroup.rotation.z = 0.06;
       fretboardGroup.position.set(4, -3, 2);
       scene.add(fretboardGroup);
 
-      // 6. Floating Music Note Glyphs (♩, ♪, ♫, ♬, 𝄞)
       const musicGlyphs = ['♩', '♪', '♫', '♬', '𝄞'];
       const totalNotes = 45;
 
@@ -1503,7 +1455,6 @@
       }
     }
 
-    // Animation loop: Smooth scroll glide down the neck + subtle cursor parallax
     let clock = new THREE.Clock();
     function animate() {
       requestAnimationFrame(animate);
@@ -1514,7 +1465,6 @@
       targetY += (mouseY - targetY) * 0.04;
 
       if (fretboardGroup) {
-        // Smoothly glides down the fretboard as user scrolls down the page
         const scrollPosZ = 2 - (scrollFraction * 14);
         const scrollPosY = -3 + (scrollFraction * 2.5);
         const scrollPosX = 4 - (scrollFraction * 6.5);
@@ -1529,12 +1479,10 @@
         fretboardGroup.rotation.y = scrollRotY + targetX * 0.5;
       }
 
-      // Subtle string vibration harmonics
       strings.forEach((str, i) => {
         str.position.y = 0.36 + Math.sin(elapsedTime * (16 + i * 2.5)) * 0.004;
       });
 
-      // Floating musical note sprites
       noteSprites.forEach(sprite => {
         sprite.position.y += sprite.userData.speedY;
         sprite.position.x += Math.sin(elapsedTime + sprite.userData.phase) * sprite.userData.speedX;
