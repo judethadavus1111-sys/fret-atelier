@@ -149,7 +149,8 @@
     <button onclick="scrollToSection('page-formats')" id="dot-page-formats" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="02. Formats"></button>
     <button onclick="scrollToSection('page-curriculum')" id="dot-page-curriculum" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="03. Trinity"></button>
     <button onclick="scrollToSection('page-instruments')" id="dot-page-instruments" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="04. Gear"></button>
-    <button onclick="scrollToSection('page-booking')" id="dot-page-booking" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="05. Concierge"></button>
+    <button onclick="scrollToSection('page-books')" id="dot-page-books" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="05. Books"></button>
+    <button onclick="scrollToSection('page-booking')" id="dot-page-booking" class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/60 transition-all" title="06. Concierge"></button>
   </aside>
 
   <!-- MAIN WRAPPER -->
@@ -186,8 +187,9 @@
           <button onclick="scrollToSection('page-instruments')" id="tab-page-instruments" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white transition-all">
             04. Instruments
           </button>
+          <button onclick="scrollToSection('page-books')" id="tab-page-books" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white transition-all">05. Books</button>
           <button onclick="scrollToSection('page-booking')" id="tab-page-booking" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white transition-all">
-            05. Concierge
+            06. Concierge
           </button>
         </nav>
 
@@ -205,11 +207,12 @@
       </div>
 
       <!-- Mobile Navigation Drawer -->
-      <div class="md:hidden mt-2 grid grid-cols-5 gap-1 p-1 bg-obsidian/90 border border-white/10 rounded-xl text-[10px] font-mono text-center">
+      <div class="md:hidden mt-2 grid grid-cols-6 gap-1 p-1 bg-obsidian/90 border border-white/10 rounded-xl text-[10px] font-mono text-center">
         <button onclick="scrollToSection('page-home')" id="mtab-page-home" class="py-1.5 rounded text-white bg-white/10">Atelier</button>
         <button onclick="scrollToSection('page-formats')" id="mtab-page-formats" class="py-1.5 rounded text-zinc-400">Formats</button>
         <button onclick="scrollToSection('page-curriculum')" id="mtab-page-curriculum" class="py-1.5 rounded text-zinc-400">Trinity</button>
         <button onclick="scrollToSection('page-instruments')" id="mtab-page-instruments" class="py-1.5 rounded text-zinc-400">Gear</button>
+        <button onclick="scrollToSection('page-books')" id="mtab-page-books" class="py-1.5 rounded text-zinc-400">Books</button>
         <button onclick="scrollToSection('page-booking')" id="mtab-page-booking" class="py-1.5 rounded text-zinc-400">Book</button>
       </div>
     </header>
@@ -741,13 +744,69 @@
       </section>
 
       <!-- ============================================== -->
-      <!-- PAGE 5: CONCIERGE & ENROLLMENT (BOOKING) -->
+      <!-- PAGE 5: BOOKS & LEARNING RESOURCES -->
+      <!-- ============================================== -->
+      <section id="page-books" class="page-section space-y-10">
+        <div class="max-w-3xl space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-400">
+            <span>05</span><span class="text-zinc-600">/</span><span>Books & Learning Resources</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-serif font-light text-white">Learn Beyond the Lesson</h2>
+          <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+            Practical resources to help guitarists connect fretboard patterns, musical understanding and real playing.
+          </p>
+        </div>
+
+        <div class="glass-card rounded-2xl border border-white/10 overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-5">
+            <div class="md:col-span-2 min-h-[290px] bg-gradient-to-br from-zinc-800 via-[#17171e] to-[#050507] p-8 flex items-center justify-center border-b md:border-b-0 md:border-r border-white/10">
+              <div class="relative w-full max-w-[215px] aspect-[3/4] border border-white/25 bg-[#0c0d12] shadow-2xl flex flex-col justify-between p-6 overflow-hidden" aria-label="Decorative book title display, not the official book cover">
+                <div class="absolute inset-0 opacity-20" style="background:repeating-linear-gradient(120deg, transparent 0px, transparent 21px, rgba(255,255,255,0.25) 22px, transparent 23px);"></div>
+                <div class="relative text-[10px] font-mono tracking-[0.22em] text-zinc-400">FRET ATELIER</div>
+                <div class="relative">
+                  <div class="text-3xl font-serif text-white leading-tight">The Visual<br>Fretboard<br>Blueprint</div>
+                  <div class="w-12 h-px bg-white/50 mt-5"></div>
+                </div>
+                <div class="relative text-[10px] uppercase tracking-widest text-zinc-400">Guitar Learning Guide</div>
+              </div>
+            </div>
+            <div class="md:col-span-3 p-6 sm:p-9 flex flex-col justify-center gap-5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-mono text-white uppercase tracking-wider">Published on Kindle</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-zinc-400 uppercase tracking-wider">Beginner to Intermediate</span>
+              </div>
+              <h3 class="text-3xl sm:text-4xl font-serif text-white">The Visual Fretboard Blueprint</h3>
+              <p class="text-sm text-zinc-400 leading-relaxed">
+                A visual approach to understanding how the guitar fretboard connects. Explore scale patterns, chord relationships and practical fretboard navigation to build confidence beyond memorized shapes.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-zinc-300">
+                <div class="p-3 rounded-xl bg-white/5 border border-white/10"><i class="ph ph-guitar mr-2"></i>Visual fretboard maps</div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/10"><i class="ph ph-book-open mr-2"></i>Structured practice reference</div>
+              </div>
+              <div class="space-y-3 pt-2">
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <div class="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-sm font-medium text-white flex items-center gap-2">
+                    <i class="ph ph-amazon-logo text-lg"></i>Amazon Kindle <span class="ml-auto text-[10px] font-mono text-zinc-400">Link coming soon</span>
+                  </div>
+                  <div class="flex-1 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-zinc-300 flex items-center gap-2">
+                    <i class="ph ph-file-pdf text-lg"></i>Direct PDF <span class="ml-auto text-[10px] font-mono text-zinc-500">Coming soon</span>
+                  </div>
+                </div>
+                <p class="text-xs text-zinc-500 leading-relaxed">The Kindle edition is published. A direct high-resolution PDF edition is planned; purchase links will appear here when ready.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================== -->
+      <!-- PAGE 6: CONCIERGE & ENROLLMENT (BOOKING) -->
       <!-- ============================================== -->
       <section id="page-booking" class="page-section space-y-8">
         
         <div class="max-w-3xl space-y-3">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-white/10 text-xs font-mono text-zinc-400">
-            <span>05</span>
+            <span>06</span>
             <span class="text-zinc-600">/</span>
             <span>Direct Concierge</span>
           </div>
@@ -1147,7 +1206,7 @@
       }
     }
 
-    const sectionIds = ['page-home', 'page-formats', 'page-curriculum', 'page-instruments', 'page-booking'];
+    const sectionIds = ['page-home', 'page-formats', 'page-curriculum', 'page-instruments', 'page-books', 'page-booking'];
     let currentSectionIndex = 0;
     let scrollFraction = 0;
 
