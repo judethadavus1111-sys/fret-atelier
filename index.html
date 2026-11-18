@@ -384,19 +384,8 @@
                 </div>
 
                 <div class="p-4 rounded-xl bg-surface border border-white/5 space-y-3">
-                  <span class="text-xs font-mono text-white block">Reference Operating Windows (MOOZ):</span>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono text-zinc-300">
-                    <div class="p-3 rounded-lg bg-obsidian border border-white/5">
-                      <div class="text-emerald-400 font-semibold mb-1">Late Night Window (10:00 PM – 2:00 AM IST)</div>
-                      <div class="text-zinc-400">🇬🇧 UK: 4:30 PM – 8:30 PM (Evening)</div>
-                      <div class="text-zinc-400">🇺🇸 US East: 11:30 AM – 3:30 PM (Afternoon)</div>
-                    </div>
-                    <div class="p-3 rounded-lg bg-obsidian border border-white/5">
-                      <div class="text-emerald-400 font-semibold mb-1">Morning & Gulf Windows</div>
-                      <div class="text-zinc-400">🇮🇳 India Morning: 7:00 AM – 10:00 AM IST</div>
-                      <div class="text-zinc-400">🇦🇪 GCC: Friday Evenings & Weekend Afternoons</div>
-                    </div>
-                  </div>
+                  <span class="text-xs font-mono text-white block">Personal Scheduling Across Time Zones</span>
+                  <p class="text-xs text-zinc-400 leading-relaxed">After your enquiry, Jude will share available lesson slots based on your location and time zone. UK and US daylight-saving changes are considered when confirming lesson times. Slots are not booked automatically.</p>
                 </div>
 
                 <div class="flex items-center justify-between pt-2">
@@ -764,7 +753,7 @@
           </div>
           <h2 class="text-3xl sm:text-5xl font-serif font-light text-white">Enrollment & Lesson Consultation</h2>
           <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-            Fill out your details below. Once submitted, your registration summary is dispatched directly to Jude T via WhatsApp for instant scheduling and fee card dispatch.
+            Fill out your details below to prepare a WhatsApp enquiry to Jude T. Available lesson slots and fee cards are shared personally; no time slot is booked automatically.
           </p>
         </div>
 
@@ -787,14 +776,14 @@
                   <input type="radio" name="formatChoice" value="home" onchange="switchFormatLogic('home')" class="peer sr-only">
                   <div class="p-3.5 rounded-xl bg-obsidian border border-white/10 peer-checked:border-white peer-checked:bg-white/10 transition-all text-center">
                     <span class="text-xs font-medium text-white block">Home Tuition (1-on-1)</span>
-                    <span class="text-[11px] text-zinc-400 font-mono">45m • Ernakulam Only</span>
+                    <span class="text-[11px] text-zinc-400 font-mono">40m • Ernakulam Only</span>
                   </div>
                 </label>
                 <label class="cursor-pointer">
                   <input type="radio" name="formatChoice" value="community" onchange="switchFormatLogic('community')" class="peer sr-only">
                   <div class="p-3.5 rounded-xl bg-obsidian border border-white/10 peer-checked:border-white peer-checked:bg-white/10 transition-all text-center">
                     <span class="text-xs font-medium text-white block">Residential Batch</span>
-                    <span class="text-[11px] text-zinc-400 font-mono">45m • Clubhouse Facility</span>
+                    <span class="text-[11px] text-zinc-400 font-mono">40m • Clubhouse Facility</span>
                   </div>
                 </label>
               </div>
@@ -877,13 +866,24 @@
             <!-- Slot and Frequency -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-mono uppercase tracking-wider text-zinc-400 mb-1.5">Target Reference Window</label>
-                <select id="slotInput" class="w-full bg-obsidian border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white font-mono">
-                  <option value="Late Night: 10:00 PM – 2:00 AM IST">Late Night (10:00 PM – 2:00 AM IST / UK: 4:30–8:30 PM)</option>
-                  <option value="Morning: 7:00 AM – 10:00 AM IST">Morning (7:00 AM – 10:00 AM IST)</option>
-                  <option value="Sunday Morning: 9:00 AM – 1:00 PM (Home Only)">Sunday Morning (9:00 AM – 1:00 PM • Home Tuition)</option>
-                  <option value="Friday Morning: 10:00 AM – 2:00 PM (Home Only)">Friday Morning (10:00 AM – 2:00 PM • Home Tuition)</option>
+                <label class="block text-xs font-mono uppercase tracking-wider text-zinc-400 mb-1.5">Your Time Zone *</label>
+                <select id="timeZoneInput" required class="w-full bg-obsidian border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white font-mono">
+                  <option value="">Select your time zone...</option>
+                  <option value="Asia/Kolkata (India IST)">India — IST (UTC+5:30)</option>
+                  <option value="Asia/Qatar (Qatar AST)">Qatar — AST (UTC+3)</option>
+                  <option value="Asia/Dubai (UAE GST)">UAE — GST (UTC+4)</option>
+                  <option value="Asia/Riyadh (Saudi Arabia AST)">Saudi Arabia — AST (UTC+3)</option>
+                  <option value="Asia/Kuwait (Kuwait AST)">Kuwait — AST (UTC+3)</option>
+                  <option value="Asia/Bahrain (Bahrain AST)">Bahrain — AST (UTC+3)</option>
+                  <option value="Asia/Muscat (Oman GST)">Oman — GST (UTC+4)</option>
+                  <option value="Europe/London (UK)">United Kingdom — London (GMT/BST)</option>
+                  <option value="America/New_York (US Eastern)">USA — Eastern (ET)</option>
+                  <option value="America/Chicago (US Central)">USA — Central (CT)</option>
+                  <option value="America/Denver (US Mountain)">USA — Mountain (MT)</option>
+                  <option value="America/Los_Angeles (US Pacific)">USA — Pacific (PT)</option>
+                  <option value="Other / will confirm via WhatsApp">Other — confirm on WhatsApp</option>
                 </select>
+                <p class="text-[11px] text-zinc-500 mt-1">Available lesson times are shared personally after your enquiry.</p>
               </div>
               <div>
                 <label class="block text-xs font-mono uppercase tracking-wider text-zinc-400 mb-1.5">Lesson Frequency</label>
@@ -1256,7 +1256,7 @@
       const phone = document.getElementById('phoneInput').value.trim();
       const email = document.getElementById('emailInput').value.trim();
       const level = document.getElementById('levelInput').value;
-      const slot = document.getElementById('slotInput').value;
+      const timeZone = document.getElementById('timeZoneInput').value;
       const freq = document.getElementById('freqInput').value;
       const hasGuitar = document.getElementById('guitarCheck').checked;
 
@@ -1283,10 +1283,10 @@
                       `• Email: ${email}\n` +
                       `• Proficiency: ${level}\n` +
                       formatSpecifics +
-                      `• Target Window: ${slot}\n` +
+                      `• Time Zone: ${timeZone}\n` +
                       `• Frequency: ${freq}\n` +
                       `• Has Guitar: ${hasGuitar ? 'Yes (Confirmed)' : 'No'}\n` +
-                      `• Request: Please share the relevant fee structure and trial slot schedule.`;
+                      `• Request: Please share your available lesson slots and the relevant fee structure.`;
 
       const encoded = encodeURIComponent(message);
       window.open(`https://wa.me/917012571699?text=${encoded}`, '_blank');
