@@ -232,6 +232,18 @@
             Private Studio & Online Global Conservatory
           </div>
 
+          <!-- Book launch banner: hidden automatically after data-ends -->
+          <div data-launch-promo data-ends="2027-01-01T00:00:00Z" class="flex flex-col sm:flex-row items-center justify-center gap-2">
+            <button onclick="scrollToSection('page-books')" class="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 px-4 py-2 rounded-xl bg-emerald-400/10 border border-emerald-400/30 text-xs sm:text-sm text-zinc-200 hover:bg-emerald-400/20 transition-colors">
+              <i class="ph ph-book-open text-emerald-300"></i>
+              <span>New book: <strong class="text-white font-semibold">The Visual Fretboard Blueprint</strong> PDF</span>
+              <span class="text-emerald-300 font-mono font-semibold">30% off · LAUNCH30</span>
+            </button>
+            <a href="https://payhip.com/b/j9baU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-black text-xs sm:text-sm font-semibold transition-colors" aria-label="Buy The Visual Fretboard Blueprint PDF on Payhip">
+              Buy the PDF <i class="ph ph-arrow-up-right"></i>
+            </a>
+          </div>
+
           <h1 class="text-4xl sm:text-7xl font-serif font-light text-white leading-[1.08] tracking-tight">
             The Craft of <br class="hidden sm:inline">
             <span class="italic font-normal text-zinc-300">Modern Guitar Mastery.</span>
@@ -764,7 +776,7 @@
             </div>
             <div class="md:col-span-3 p-6 sm:p-9 flex flex-col justify-center gap-5">
               <div class="flex flex-wrap items-center gap-2">
-                <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-mono text-white uppercase tracking-wider">Published on Kindle</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/10 border border-white/15 text-[10px] font-mono text-white uppercase tracking-wider">PDF &amp; Kindle</span>
                 <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-mono text-zinc-400 uppercase tracking-wider">Beginner to Intermediate</span>
               </div>
               <h3 class="text-3xl sm:text-4xl font-serif text-white">The Visual Fretboard Blueprint</h3>
@@ -776,18 +788,37 @@
                 <div class="p-3 rounded-xl bg-white/5 border border-white/10"><i class="ph ph-book-open mr-2"></i>Structured practice reference</div>
               </div>
               <div class="space-y-3 pt-2">
+                <!-- Launch coupon: hidden automatically after data-ends (see script at the end of the page) -->
+                <div data-launch-promo data-ends="2027-01-01T00:00:00Z" class="p-4 rounded-xl bg-emerald-400/10 border border-emerald-400/30 flex flex-col sm:flex-row sm:items-center gap-3">
+                  <div class="flex-1">
+                    <p class="text-sm font-semibold text-white">Launch offer: 30% off the PDF</p>
+                    <p class="text-xs text-zinc-400">Enter the code at checkout. Valid until 31 December 2026.</p>
+                  </div>
+                  <button type="button" onclick="copyLaunchCode(this)" class="px-4 py-2 rounded-lg bg-obsidian border border-dashed border-emerald-400/60 text-sm font-mono font-semibold text-emerald-300 hover:bg-zinc-900 transition-colors flex items-center justify-center gap-2" aria-label="Copy coupon code LAUNCH30">
+                    <span>LAUNCH30</span><i class="ph ph-copy"></i>
+                  </button>
+                </div>
+                <a href="https://payhip.com/b/j9baU" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-white text-black hover:bg-zinc-200 transition-colors text-sm font-semibold flex items-center justify-between gap-2" aria-label="Buy The Visual Fretboard Blueprint PDF on Payhip">
+                  <span class="flex items-center gap-2"><i class="ph ph-file-pdf text-lg"></i><span class="flex flex-col leading-tight">Buy the PDF<span class="text-xs font-normal text-zinc-600">$19 · instant download</span></span></span><i class="ph ph-arrow-up-right"></i>
+                </a>
+                <div class="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs">
+                  <a href="https://payhip.com/preview/j9baU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors">
+                    <i class="ph ph-eye"></i>Free preview: look inside the book
+                  </a>
+                  <a href="https://payhip.com/b/j9baU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-mono text-zinc-500 hover:text-white transition-colors">
+                    <i class="ph ph-link"></i>payhip.com/b/j9baU
+                  </a>
+                </div>
+                <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider pt-2">Kindle edition</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <a href="https://amzn.in/d/0gePCNeL" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-white text-black hover:bg-zinc-200 transition-colors text-sm font-semibold flex items-center justify-between gap-2" aria-label="View The Visual Fretboard Blueprint on Amazon India">
+                  <a href="https://amzn.in/d/0gePCNeL" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 transition-colors flex items-center justify-between gap-2" aria-label="View The Visual Fretboard Blueprint on Amazon India">
                     <span class="flex items-center gap-2"><i class="ph ph-amazon-logo text-lg"></i>Amazon India</span><i class="ph ph-arrow-up-right"></i>
                   </a>
                   <a href="https://a.co/d/03O6zNA7" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-sm font-medium text-white hover:bg-white/20 transition-colors flex items-center justify-between gap-2" aria-label="View The Visual Fretboard Blueprint on Amazon US">
                     <span class="flex items-center gap-2"><i class="ph ph-amazon-logo text-lg"></i>Amazon US</span><i class="ph ph-arrow-up-right"></i>
                   </a>
                 </div>
-                <div class="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm font-medium text-zinc-300 flex items-center gap-2">
-                  <i class="ph ph-file-pdf text-lg"></i>Direct PDF <span class="ml-auto text-[10px] font-mono text-zinc-500">Coming soon</span>
-                </div>
-                <p class="text-xs text-zinc-500 leading-relaxed">The Kindle edition is available through Amazon India and Amazon US. A direct high-resolution PDF edition is planned.</p>
+                <p class="text-xs text-zinc-500 leading-relaxed">The PDF is a 102-page full-colour A4 edition with clickable contents and bookmarks, sold securely through Payhip. The Kindle edition is available through Amazon India and Amazon US.</p>
               </div>
             </div>
           </div>
@@ -1555,6 +1586,22 @@
       animate();
       onPageScroll();
     };
+
+    // Book launch offer: hide the banner and coupon once the end date has passed
+    document.querySelectorAll('[data-launch-promo]').forEach(function (el) {
+      if (Date.now() >= Date.parse(el.dataset.ends)) el.remove();
+    });
+
+    function copyLaunchCode(btn) {
+      var label = btn.querySelector('span');
+      var done = function () {
+        label.textContent = 'Copied!';
+        setTimeout(function () { label.textContent = 'LAUNCH30'; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText('LAUNCH30').then(done, function () {});
+      }
+    }
   </script>
 
 </body>
